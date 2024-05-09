@@ -37,19 +37,9 @@
 <img src="https://www.medienzentrum-wmk.de/wp-technik/wp-content/uploads/formidable/geogebra.png" class="card-img-top" alt>
 <div class="card-body">
 <div class="col text-center">
-<button type="button" class="btn btn-lg btn-dark" button onclick="openGame()">Launch GeoGerba (final step)</button>
-<script>
-function openGame() {
-var win = window.open()
-var url = "https://foxostream.vercel.app/"
-var iframe = win.document.createElement('iframe')
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.border = "none";
-iframe.src = url
-win.document.body.appendChild(iframe)
-}
-</script>
+<button type="button" class="btn btn-lg btn-dark" button onclick="createPopupWin('https://foxobrowser.vercel.app/',
+            'Play', 1200, 650);">
+Play
 </button>
 </div>
 </div>
